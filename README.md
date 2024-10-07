@@ -2,8 +2,7 @@
 
 ## Planning:
 ### Concept/Name
-**Ear-Resistible**
-This is a crowdfunding platform where users can support and fund unique earring projects. Creators can showcase their earring designs or DIY kits, and backers can pledge money to help bring these projects to life.
+**Ear-Resistible** - This is a crowdfunding platform where users can support and fund unique earring projects. Creators can showcase their earring designs or DIY kits, and backers can pledge money to help bring these projects to life.
 
 ### Intended Audience/User Stories
 - Backers/Supporters: Users who want to financially support unique earring designs and DIY kits.
