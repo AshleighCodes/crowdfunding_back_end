@@ -62,7 +62,7 @@ Ear-Resistible
 
 ## Planning:
 ### Concept/Name
-This is a crowdfunding platform where users can support and fund unique earring projects. Creators can showcase their earring designs or DIY kits, and backers can pledge money to help bring these projects to life, receiving exclusive earrings or kits as rewards.
+This is a crowdfunding platform where users can support and fund unique earring projects. Creators can showcase their earring designs or DIY kits, and backers can pledge money to help bring these projects to life.
 
 ### Intended Audience/User Stories
 •	Backers/Supporters: Users who want to financially support unique earring designs and DIY kits.
@@ -94,23 +94,11 @@ Backer Dashboard
 •	“As a user, I want to view detailed descriptions, images, and videos of each earring project, so I can make an informed decision before pledging.”
 •	“As a user, I want to see the funding goal and progress of each project, so I know how close it is to being fully funded.”
 •	“As a user, I want to pledge different amounts with corresponding reward tiers, so I can choose how much I want to contribute.”
-•	“As a user, I want to receive updates from the project creators as the project progresses, so I can stay informed about its development.”
-•	“As a user, I want to be able to share my favorite earring projects with friends on social media, so I can help promote designs I love.”
 •	“As a user, I want to track the status of projects I’ve backed, so I know when to expect my rewards or completed earrings.”
-•	“As a user, I want to receive notifications when new earring projects are launched, so I don’t miss out on supporting exciting new designs.”
 •	“As a creator, I want to set up a project page with images, descriptions, and a funding goal, so I can showcase my earring design ideas.”
-•	“As a creator, I want to manage reward tiers and communicate with backers, so I can engage with my supporters and keep them updated.”
 
 ### API Spec
-{{ Fill out the table below to define your endpoints. An example of what this might look like is shown at the bottom of the page. 
-
-It might look messy here in the PDF, but once it's rendered it looks very neat! 
-
-It can be helpful to keep the markdown preview open in VS Code so that you can see what you're typing more easily. }}
-
-| URL | HTTP Method | Purpose | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
-| --- | ----------- | ------- | ------- | ------------ | --------------------- | ---------------------------- |
-|     |             |         |         |              |                       |                              |
+![Django Endpoints](./README_img/API_Spec.png)
 
 ### DB Schema
-![]( {{ ./relative/path/to/your/schema/image.png }} )
+![Database Schema](./README_img/Database%20Schema.drawio.png)
