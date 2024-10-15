@@ -75,8 +75,13 @@ class ProjectDetail(APIView):
 class PledgeList(APIView):
     
     def get(self, request):
-        pledges = Pledge.objects.all()
+        if request.user.is_superuser:
+            pledges = Pledge.objects.all()
+        else:
+            pledges = Pledge.objects.filter(supporter=request.user)
+        print("Hello WOrld")
         serializer = PledgeSerializer(pledges, many=True)
+        print("Hello WOrld")
         return Response(serializer.data)
     
     def post(self, request):
