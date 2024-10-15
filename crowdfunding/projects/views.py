@@ -79,9 +79,7 @@ class PledgeList(APIView):
             pledges = Pledge.objects.all()
         else:
             pledges = Pledge.objects.filter(supporter=request.user)
-        print("Hello WOrld")
         serializer = PledgeSerializer(pledges, many=True)
-        print("Hello WOrld")
         return Response(serializer.data)
     
     def post(self, request):
