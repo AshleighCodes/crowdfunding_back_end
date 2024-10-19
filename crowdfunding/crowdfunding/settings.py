@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4aq%ij#22)8oyg3&&c*b8k)1j8o=$rq*=ldb#t%h(ya!g=@!_)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # Change to 'False' in order for the '404 error' page to appear
+DEBUG = True # Change to 'False' in order for the '404 error' page to appear
 
 ALLOWED_HOSTS = ["*"]
 
