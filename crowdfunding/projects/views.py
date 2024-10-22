@@ -77,6 +77,8 @@ class PledgeList(APIView):
     def get(self, request):
         if request.user.is_superuser:
             pledges = Pledge.objects.all()
+        elif request.user.is_anonymous:
+            pledges = Pledge.objects.all()
         else:
             pledges = Pledge.objects.filter(supporter=request.user)
         serializer = PledgeSerializer(pledges, many=True)
