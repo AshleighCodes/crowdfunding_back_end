@@ -72,6 +72,35 @@ class ProjectDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+# IF A PROJECT IS OPEN
+# class PledgeList(APIView):
+    
+#     def get(self, request):
+#         if request.user.is_superuser:
+#             pledges = Pledge.objects.all()
+#         elif request.user.is_anonymous:
+#             pledges = Pledge.objects.all()
+#         else:
+#             pledges = Pledge.objects.filter(supporter=request.user)
+#         serializer = PledgeSerializer(pledges, many=True)
+#         return Response(serializer.data)
+    
+#     def post(self, request):
+#         serializer = PledgeSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save(supporter=request.user)
+#             return Response(
+#                 serializer.data,
+#                 status=status.HTTP_201_CREATED
+#                 )
+            
+#         return Response(
+#             serializer.errors,
+#             status=status.HTTP_400_BAD_REQUEST
+#             )
+
+
+# IF A PROJECT IS CLOSED
 class PledgeList(APIView):
     
     def get(self, request):
@@ -87,16 +116,31 @@ class PledgeList(APIView):
     def post(self, request):
         serializer = PledgeSerializer(data=request.data)
         if serializer.is_valid():
+            project_id = request.data.get('project')
+            try:
+                project = Project.objects.get(id=project_id)
+            except Project.DoesNotExist:
+                return Response(
+                    {'error': 'Project does not exist'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
+            if not project.is_open:
+                return Response(
+                    {'error': 'Cannot pledge to a closed project'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
             serializer.save(supporter=request.user)
             return Response(
                 serializer.data,
                 status=status.HTTP_201_CREATED
-                )
+            )
             
         return Response(
             serializer.errors,
             status=status.HTTP_400_BAD_REQUEST
-            )
+        )
 
 class PledgeDetail(APIView):
     
