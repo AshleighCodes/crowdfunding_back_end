@@ -91,7 +91,7 @@ Please include the following in your readme doc:
 - [X] A screenshot of Insomnia, demonstrating a token being returned (see below).
 ![TOKEN Request - Deployed Heroku](./README_img/Screenshot_TokenRequest.gif)
 - [X] Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
-####  CREATE NEW USER - Live Demonstration
+####  CREATE NEW USER - How To
 1. In Insomnia, create a new `POST` request.
 2. In the URL searchbar (next to `POST`), add your Heroku deployed link, followed by `/users/`. For example:
 ```
@@ -106,6 +106,7 @@ https://your-deployed-link/users/
 }
 ```
 5. Select `Send`, and it will now return your recently created user details.
+####  CREATE NEW USER - Live Demonstration
 ![CREATE NEW USER - Deployed Heroku](./README_img/Screenshot_CreateNewUser.gif)
 ####  CREATE NEW PROJECT - Live Demonstration
 ![CREATE NEW PROJECT - Deployed Heroku](./README_img/Screenshot_CreateNewProject.gif)
