@@ -84,15 +84,15 @@ Note that while this is a crowdfunding website, actual money transactions are ou
 
 Please include the following in your readme doc:
 - [X] A link to the deployed project 👉 [Please click here](https://earisistable-6e77c5ae1c72.herokuapp.com/)
-- [X] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint (see below)
+- [X] A screenshot of Insomnia, demonstrating a successful GET method for any endpoint (see below).
 ![GET Request - Deployed Heroku](./README_img/Screenshot_GetRequest.gif)
 - [X] A screenshot of Insomnia, demonstrating a successful POST method for any endpoint (see below).
 ![POST Request - Deployed Heroku](./README_img/Screenshot_PostRequest.gif)
 - [X] A screenshot of Insomnia, demonstrating a token being returned (see below).
 ![TOKEN Request - Deployed Heroku](./README_img/Screenshot_TokenRequest.gif)
-- [ ] Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
+- [X] Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
 ####  CREATE NEW USER - Live Demonstration
 ![CREATE NEW USER - Deployed Heroku](./README_img/Screenshot_CreateNewUser.gif)
 ####  CREATE NEW PROJECT - Live Demonstration
 ![CREATE NEW PROJECT - Deployed Heroku](./README_img/Screenshot_CreateNewProject.gif)
-- [ ] Your refined API specification and Database Schema.
+- [X] Your refined API specification and Database Schema.
