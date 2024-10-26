@@ -106,6 +106,7 @@ https://your-deployed-link/users/
 }
 ```
 5. Select `Send`, and it will now return your recently created user details.
+**NOTE:** Once you have selected `Send` and can see your new user account created in Insomnia, you also will have the option to create a `PUT` request to update any details that you may have missed by accident. For example, first and last name, email address etc.
 ####  CREATE NEW USER - Live Demonstration
 ![CREATE NEW USER - Deployed Heroku](./README_img/Screenshot_CreateNewUser.gif)
 ####  CREATE NEW PROJECT - How To
@@ -126,7 +127,7 @@ https://your-deployed-link/projects/
 		"is_open": true
 	}
 ```
-4. Select `Send`, and it will now return your recently created project details.
+1. Select `Send`, and it will now return your recently created project details.
 ####  CREATE NEW PROJECT - Live Demonstration
 ![CREATE NEW PROJECT - Deployed Heroku](./README_img/Screenshot_CreateNewProject.gif)
 - [X] Your refined API specification and Database Schema.
