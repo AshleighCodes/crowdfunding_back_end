@@ -92,6 +92,20 @@ Please include the following in your readme doc:
 ![TOKEN Request - Deployed Heroku](./README_img/Screenshot_TokenRequest.gif)
 - [X] Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).
 ####  CREATE NEW USER - Live Demonstration
+1. In Insomnia, create a new `POST` request.
+2. In the URL searchbar (next to `POST`), add your Heroku deployed link, followed by `/users/`. For example:
+```
+https://your-deployed-link/users/
+```
+3. Select `Body`, and then select `JSON`. This will be used to add the body data for creating a new user.
+4. Inside the `JSON` file, copy and paste this body data below. Replace any of the `insert-here` texts with your unique username and password, ensuring they are inside the double-quotation marks:
+```
+{
+    "username": "insert-username-here",
+    "password": "insert-password-here"
+}
+```
+5. Select `Send`, and it will now return your recently created user details.
 ![CREATE NEW USER - Deployed Heroku](./README_img/Screenshot_CreateNewUser.gif)
 ####  CREATE NEW PROJECT - Live Demonstration
 ![CREATE NEW PROJECT - Deployed Heroku](./README_img/Screenshot_CreateNewProject.gif)
