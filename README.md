@@ -108,6 +108,25 @@ https://your-deployed-link/users/
 5. Select `Send`, and it will now return your recently created user details.
 ####  CREATE NEW USER - Live Demonstration
 ![CREATE NEW USER - Deployed Heroku](./README_img/Screenshot_CreateNewUser.gif)
+####  CREATE NEW PROJECT - How To
+1. In Insomnia, create a new `POST` request.
+2. In the URL searchbar (next to `POST`), add your Heroku deployed link, followed by `/projects/`. For example:
+```
+https://your-deployed-link/projects/
+```
+1. Select `Auth`, and then add your unique token number inside `Token`. Afterwards inside `Prefix`, add `Token`.
+2. Select `Body`, and then select `JSON`. This will be used to add the body data for creating a new project.
+3. Inside the `JSON` file, copy and paste this body data below. Replace any of the `insert-here` texts with your unique username and password, ensuring they are inside the double-quotation marks:
+```
+	{
+		"title": "insert-here",
+		"description": "insert-here",
+		"goal": insert-here,
+		"image": "insert-here",
+		"is_open": true
+	}
+```
+4. Select `Send`, and it will now return your recently created project details.
 ####  CREATE NEW PROJECT - Live Demonstration
 ![CREATE NEW PROJECT - Deployed Heroku](./README_img/Screenshot_CreateNewProject.gif)
 - [X] Your refined API specification and Database Schema.
